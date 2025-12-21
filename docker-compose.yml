@@ -8,6 +8,7 @@ services:
       - "80:80"
       - "8001:8001"
       - "8002:8002"
+      - "8003:8003"
     volumes:
       - ./html:/usr/share/nginx/html
       - ./nginx/conf.d:/etc/nginx/conf.d
