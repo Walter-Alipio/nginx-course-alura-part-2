@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: .
+    container_name: nginx-dev
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./logs:/var/log/nginx
+    restart: unless-stopped
+    
