@@ -5,10 +5,14 @@ services:
     build: .
     container_name: nginx-dev
     ports:
-      - "8080:80"
+      - "80:80"
+      - "8001:8001"
+      - "8002:8002"
     volumes:
       - ./html:/usr/share/nginx/html
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./logs:/var/log/nginx
+      - ./servico1:/usr/share/nginx/servico1
+      - ./servico2:/usr/share/nginx/servico2
     restart: unless-stopped
     

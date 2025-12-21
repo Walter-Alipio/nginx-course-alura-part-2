@@ -5,7 +5,12 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY nginx/conf.d/ /etc/nginx/conf.d/
+COPY nginx/microsservicos.conf /etc/nginx/microsservicos.conf
 
 COPY html /usr/share/nginx/html/
+COPY servico1 /usr/share/nginx/servico1/
+COPY servico2 /usr/share/nginx/servico2/
 
 EXPOSE 80
+EXPOSE 8001
+EXPOSE 8002
