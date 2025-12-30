@@ -1,7 +1,7 @@
 # NGINX: servidor Web, Proxy Reverso e API Getaway
 
-Alura couse
-- There are different branchs to each step of the course.
+Alura course
+- There are different branches to each step of the course.
 
 In this sequence of the course we are advancing in nginx possibilities and configurations.
 
