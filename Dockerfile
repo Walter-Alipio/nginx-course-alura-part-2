@@ -10,6 +10,7 @@ COPY html /usr/share/nginx/html/
 COPY servico1 /usr/share/nginx/servico1/
 COPY servico2 /usr/share/nginx/servico2/
 COPY performance /usr/share/nginx/performance/
+COPY local /usr/share/localssl/
 
 EXPOSE 80
 EXPOSE 8001

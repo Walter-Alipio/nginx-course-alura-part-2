@@ -4,6 +4,7 @@ services:
     container_name: nginx-dev-2
     ports:
       - "80:80"
+      - "443:443"
       - "8001:8001"
       - "8002:8002"
       - "8003:8003"
@@ -15,5 +16,6 @@ services:
       - ./servico1:/usr/share/nginx/servico1
       - ./servico2:/usr/share/nginx/servico2
       - ./performance:/usr/share/nginx/performance
+      - ./local:/usr/share/localssl
     restart: unless-stopped
     
